@@ -44,6 +44,8 @@ header {
 
 .header__menu__item {
     margin-right: 70px;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .header__menu__item:nth-child(3) {
