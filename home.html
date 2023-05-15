@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/home_style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swipers.css">
     <title>Travek</title>
 </head>
 
@@ -163,19 +164,19 @@
                         </div>
                         <div class="countr__box__item">
                             <div>2. Japan</div>
-                            <input type="button" name="rus" id="rus" value="view">
+                            <input type="button" name="rus" id="rus" value="view" onclick="viewJP()">
                         </div>
                         <div class="countr__box__item">
                             <div>3. China</div>
-                            <input type="button" name="rus" id="rus" value="view">
+                            <input type="button" name="rus" id="rus" value="view" onclick="viewCH()">
                         </div>
                         <div class="countr__box__item">
                             <div>4. Canada</div>
-                            <input type="button" name="rus" id="rus" value="view">
+                            <input type="button" name="rus" id="rus" value="view" onclick="viewCA()">
                         </div>
                         <div class="countr__box__item">
                             <div>5. Usa</div>
-                            <input type="button" name="rus" id="rus" value="view">
+                            <input type="button" name="rus" id="rus" value="view" onclick="viewUSA()">
                         </div>
                     </div>
                 </div>
@@ -212,20 +213,29 @@
         <div class="map__box" id="map">
             <img src="images/map.png" alt="">
         </div>
-        <div class="main__form__box__fourth">
+        <div class="main__form__box__fourth" id="main__form__box__fourth">
             <div class="top_box">
-            <div class="lastback">← back</div>
-            <div class="link_box">
-            <a href="#" class="info_link">all info</a>
-            <img src="images/figna.svg" alt="">
-        </div>
-        </div>
-            <div class="cnt_name">Russia</div>
-            <div>Russia (Russian Federation) is the largest state in the world, occupying 1/6 of the entire land area of
+                <div class="lastback" onclick="lastback()">← back</div>
+                <div class="link_box">
+                    <a href="#" class="info_link">all info</a>
+                    <img src="images/figna.svg" alt="">
+                </div>
+            </div>
+            <div class="cnt_name" id="cnt_name">Russia</div>
+            <div id="desc">Russia (Russian Federation) is the largest state in the world, occupying 1/6 of the entire land area of
                 ​​the Earth. This is a country with a long history, rich culture and generous nature. Some monuments of
                 architecture, history and culture on the territory of the Russian Federation are included in the list of
                 UNESCO World Heritage Sites.</div>
-            
+
+        </div>
+        <div class="sim-slider" id="sliderRU">
+            <ul class="sim-slider-list">
+                <li class="sim-slider-element"><img src="" alt="1" id="slideone"></li>
+                <li class="sim-slider-element"><img src="" alt="2" id="slidetwo"></li>
+            </ul>
+            <div class="sim-slider-arrow-left"></div>
+            <div class="sim-slider-arrow-right"></div>
+            <div class="sim-slider-dots"></div>
         </div>
     </main>
     <footer>
@@ -250,5 +260,6 @@
 <script src="js/change.js"></script>
 <script src="js/find.js"></script>
 <script src="js/view.js"></script>
-
+<script src="js/swiper.js"></script>
+<script>new Sim()</script>
 </html>

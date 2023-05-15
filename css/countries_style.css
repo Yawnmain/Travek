@@ -105,7 +105,8 @@ main {
 
 input[type=button]{
     margin-top: 10px;
-    border: 1px solid #00A3FF;
+    border: 2px solid #00A3FF;
+    background: none;
     border-radius: 26px;
     padding: 10px 5px 10px 5px;
     text-align: center;
@@ -126,7 +127,40 @@ input[type=button]:hover {
     color: #FFFFFF;
     transition: 0.2s;
 }
+.desc_box{
+    padding: 10px 40px 20px 40px;
+    border: 1px solid #E3E3E3;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: none;
+}
+.lastback {
+    margin-bottom: 5px;
+    color: #C6C6C6;
+    cursor: pointer;
+}
 
+.lastback:hover {
+    color: #1E1E1E;
+}
+
+.cnt_name {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.top_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info_link {
+    color: #00A3FF;
+}
+
+.info_link:hover {
+    color: #005C8F;
+}
 /******************FOOTER**********************/
 footer {
     background-color: #363636;
