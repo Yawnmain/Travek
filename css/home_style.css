@@ -52,9 +52,6 @@ header {
 .header__menu__item:nth-child(3) {
     margin: 0;
 }
-.header__menu__item:focus{
-    border-bottom:5px solid #00A3FF ;
-}
 /******************MAIN**********************/
 main {
     margin: 0 auto;
